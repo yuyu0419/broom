@@ -1,0 +1,128 @@
+@import url(common.css);
+
+main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.m_middle {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+
+}
+
+
+.m_middle img {
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+.w1520 {}
+
+
+.w1520 figcaption {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    width: 100%;
+}
+
+.w1520 figcaption span {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.w1520 figcaption span:first-child img {
+    width: 120px;
+    height: 60px;
+}
+
+.w1520 figcaption span:last-child {}
+
+.w1520 figcaption span:last-child img {
+    width: 25px;
+    height: 60px;
+    animation: move .5s alternate-reverse infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 50%);
+    }
+}
+
+
+.w1520 figcaption strong {
+    padding-top: 50px;
+    line-height: 1.2;
+    font-family: 'yg-jalnan';
+    font-size: 70px;
+    color: #fff;
+    white-space: pre-line;
+
+}
+
+.w1520 figcaption p {
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+
+
+
+/*반응형*/
+@media (min-width:1024px) and (max-width:1400px) {
+    .w1520 figcaption {
+        transform: translate(-50%, 50%);
+    }
+
+    .w1520 figcaption span {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+
+    .w1520 figcaption span:first-child img {
+        width: 9.6rem;
+        height: 4.8rem;
+    }
+
+    .w1520 figcaption span:last-child img {
+        width: 2rem;
+        height: 4.8rem;
+    }
+
+    .w1520 figcaption strong {
+        padding-top: 4rem;
+        font-size: 5.2rem;
+    }
+
+    .w1520 figcaption p {
+        font-size: 2rem;
+        margin-top: 3.2rem;
+        padding-bottom: 8rem;
+    }
+
+
+}

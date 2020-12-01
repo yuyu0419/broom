@@ -1,0 +1,255 @@
+@import url(common.css);
+
+.fourth {
+    height: 100vh;
+    position: relative;
+}
+
+.back_4 {}
+
+.pack01 {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    width: 180px;
+}
+
+.pack01 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.pack02 {
+    position: absolute;
+    width: 170px;
+    top: 25%;
+    right: 30%;
+
+}
+
+.pack02 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.pack03 {
+    position: absolute;
+    width: 210px;
+    top: 3%;
+    right: 5%;
+}
+
+.pack03 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.pack04 {
+    width: 360px;
+    top: 40%;
+    right: 25%;
+    position: absolute;
+}
+
+.pack04 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.pack05 {
+    width: 360px;
+    bottom: 10%;
+    left: 15%;
+    position: absolute;
+}
+
+.pack05 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.pack06 {
+    width: 140px;
+    bottom: 0;
+    left: 2%;
+    position: absolute;
+}
+
+.pack06 img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+
+
+
+.w1520 {}
+
+.how {}
+
+.how h2 {}
+
+.indi {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 15%;
+    height: 100px;
+    transform: translate(0, 0);
+
+}
+
+.indi a {
+    position: static !important;
+    width: 50%;
+    height: 100%;
+}
+
+.indi a span {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 80px;
+    height: 5px;
+    border-radius: 15px;
+    border: 2px solid #ffcb03;
+}
+
+.indi a.active span {
+    background-color: #ffcb03
+}
+
+.indi a p {
+    font-size: 25px;
+    font-family: 'NanumBarunGothic';
+    color: #0059e9;
+    margin: 5px 0;
+    width: 100%;
+}
+
+
+
+.indi a.active p {
+    font-weight: bold;
+}
+
+
+.way {
+    width: 80%;
+}
+
+.way ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.way ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.way ul li p:first-child {
+    background-color: rgba(0, 89, 233, 0.5);
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    color: rgba(0, 89, 233, 0.5);
+
+}
+
+.way ul li img {
+    width: 70px;
+    padding-top: calc(50% - 35px);
+
+}
+
+.way ul li strong {
+    color: #0059e9;
+    white-space: pre-line;
+    font-size: 30px;
+    font-family: 'NanumBarunGothic';
+    margin-top: 50px;
+}
+
+.way ul li p {
+    color: #0059e9;
+    white-space: pre-line;
+    font-size: 20px;
+    font-family: 'NanumBarunGothic';
+    margin-top: 20px;
+}
+
+
+/*pc*/
+@media (min-width:1024px) and (max-width:1400px) {
+    .pack01 {
+        width: 13rem;
+    }
+
+    .pack02 {
+        width: 15rem;
+    }
+
+    .pack03 {
+        width: 16rem;
+    }
+
+    .pack04 {
+        width: 27rem;
+    }
+
+    .pack05 {
+        width: 25rem;
+    }
+
+    .pack06 {
+        width: 10rem;
+    }
+
+    .indi {
+        height: 8rem;
+    }
+
+    .indi > a {
+        width: 50%;
+    }
+
+    .indi a span {
+        width: 5rem !important;
+        height: 0.3rem;
+    }
+
+    .indi a p {
+        font-size: 1.6rem !important;
+        margin: 0.1rem 0;
+        width: 100%;
+    }
+    
+    .way ul{
+        transform: translate(0%,15%);
+    }
+
+    .way ul li p:first-child {
+        background-color: rgba(0, 89, 233, 0.5);
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .way ul li img {
+        width: 5rem;
+        padding-top: calc(50% - 2.5rem);
+
+    }
+
+    .way ul li strong {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+
+    .way ul li p {
+        font-size: 1.5rem;
+        margin-top: 1.6rem;
+    }
+}

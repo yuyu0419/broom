@@ -1,0 +1,85 @@
+@import url(common.css);
+.map{
+    height: 100vh;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: none;
+}
+.map.active{
+    display: block;
+}
+
+
+.kakao_map {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.kakao {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    animation: fadeK 0.5s ease 1 reverse;
+}
+@keyframes fadeK{
+    100%{transform: translate(100%,0);}
+    0%{transform: translate(0%,0);}
+}
+
+.map_pop {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 89, 233, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fade .7s ease 1 normal;
+}
+@keyframes fade{
+    0%{transform: translate(-100%,0);}
+    100%{transform: translate(5%,0);}
+}
+
+
+
+.pop_pack {
+    white-space: pre-line;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 1.2;
+    font-family: 'NanumBarunGothic';
+
+}
+
+.pop_pack a {
+    margin:100px 80px;
+    text-align: left;
+}
+
+.pop_pack a img {
+    width: 50px;
+}
+.l_pack{
+    background: url(../img/logo_white.png) top left no-repeat;
+    margin:100px 80px;
+    background-size:90px;
+    padding-top:60px;
+}
+.l_pack strong {
+    font-size: 18px;
+}
+
+.l_pack p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: 'NanumBarunGothic';
+    text-align: left;
+}

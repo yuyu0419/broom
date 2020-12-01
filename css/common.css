@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+
+
+html,
+body {
+    margin: 0;
+    font-size: 10px;
+}
+
+body {}
+
+main {}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+li,
+ul,
+code,
+span {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 15px auto !important;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'yg-jalnan';
+    color: #0059e9 !important;
+}
+
+article {
+    width: 100%;
+    position: relative;
+}
+
+
+.w1520 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.w1520 a {
+    position: absolute;
+}
+
+/*목차 윗*/
+.in_01 {
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    transform: translate(0, 0);
+    border-bottom: 1px solid #0059e9;
+}
+
+.in_01 a {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #0059e9;
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+    white-space: pre-line;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+
+/*목차 아래*/
+.in_02 {
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    transform: translate(0, 0);
+    position: absolute;
+    bottom: 7%;
+    left: -50%;
+}
+
+.in_02 a {
+    width: 100%;
+    height: 100%;
+    background: url(../img/arrow_dwn.png) bottom center no-repeat;
+    background-size: 20px;
+    color: #0059e9;
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+    white-space: pre-line;
+    top: 50%;
+    left: 50%;
+    animation: move .5s alternate-reverse infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 10%);
+    }
+}
+
+/*-----header nav-----------*/
+
+header {}
+
+header nav {
+    width: 45px;
+    position: fixed;
+    z-index: 1000;
+    right: 3%;
+    top: 5%;
+}
+
+.burger {
+    width: 40px;
+    height: 30px;
+}
+
+.burger span {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 6px;
+    transition: 1s;
+}
+
+.burger:hover span {
+    margin-bottom: 10px;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0;
+}
+
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+}
+
+.burger span:nth-of-type(3) {
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+/*스크롤내렸을때 네이게이션 컬러변화*/
+
+header nav.active .burger span {
+    background-color: #0059e9;
+}
+
+header nav.active .mybroom {
+    border-color: #0059e9;
+}
+
+header nav.active .mybroom a p {
+    color: #0059e9;
+}
+
+/*------네비게이션의 나의부름-----------*/
+
+
+.mybroom {
+    width: 40px;
+    margin-top: 30px;
+    border: 2.5px solid #fff;
+    border-right: none;
+    vertical-align: middle;
+}
+
+.mybroom a {}
+
+.mybroom a p {
+    line-height: 1;
+    font-family: 'paybooc-Bold';
+    padding: 15px 0 15px 15px;
+    color: #fff;
+    font-size: 25px;
+    transform-origin: bottom;
+}
+
+
+/*==========pop up============*/
+.pop_pack {
+    width: 100%;
+}
+
+.burger_pack {}
+
+.pop_menu {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 89, 233, 0.8);
+    z-index: 201;
+}
+
+.pop_menu.active {
+    display: block;
+}
+
+.menu li img {
+    width: 120px;
+
+}
+
+.menu li:first-child {
+    margin: 150px 0 100px 0;
+}
+
+.menu li {
+    margin: 20px auto;
+}
+
+.menu li.active a {
+    text-decoration-line: line-through;
+}
+
+.menu li a {
+    color: #fff;
+    font-family: 'yg-jalnan';
+    font-size: 50px;
+}
+
+.sns {
+    width: 100%;
+    margin: 0 auto;
+    transform: translate(46%, 50%);
+}
+
+.sns a {
+    margin: 10px 3px;
+}
+
+.sns a img {
+    width: 40px;
+}
+
+
+.pop_menu p {
+    color: #003181;
+    white-space: pre-line;
+    font-size: 15px;
+    font-family: 'paybooc-Bold';
+    font-weight: bold;
+    margin-top: 80px;
+
+}
+
+
+/*나의 부름*/
+
+.mybroom_pop {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 201;
+}
+
+.mybroom_pop.active {
+    display: block;
+}
+
+.mylist {
+    z-index: 201;
+    background-color: rgba(0, 89, 233, 0.8);
+    width: 30%;
+    margin: 0 auto;
+    height: 35%;
+    border: 2px solid #0059e9;
+    transform: translate(0, 100%);
+}
+
+.mylist h4 {
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    color: #fff;
+    margin: 30px 0 20px 0;
+}
+
+.login {}
+
+.info {
+    text-align: center;
+    width: 70%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+.info input {
+    color: #0059e9;
+    margin: 5px auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    width: 70%;
+    box-sizing: content-box;
+    margin-left: 15px;
+}
+
+.submit {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.submit input {
+    border: 3px solid #0059e9;
+    width: 100%;
+    margin: 10px auto;
+    padding: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    box-sizing: content-box;
+}
+
+/*==========pc=========*/
+@media (min-width:1024px) and (max-width:1400px) {
+    h2 {
+        margin: 1.6rem auto !important;
+        font-size: 4rem;
+    }
+
+    /*목차 윗*/
+    .in_01 {
+        height: 7.2rem;
+    }
+
+    .in_01 a {
+        font-size: 1.6rem;
+    }
+
+    /*목차 아래*/
+    .in_02 {
+        height: 5.6rem;
+        bottom: 5%;
+        left: -50%;
+    }
+
+    .in_02 a {
+        background-size: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    /*-----header nav-----------*/
+
+    header nav {
+        width: 3.6rem;
+    }
+
+    .burger {
+        width: 3.2rem;
+        height: 2.4rem;
+    }
+
+    .burger span {
+        margin-bottom: 6px;
+    }
+
+    .burger:hover span {
+        margin-bottom: 0.8rem;
+    }
+
+    /*------네비게이션의 나의부름-----------*/
+
+    .mybroom {
+        width: 3.2rem;
+        margin-top: 1.8rem;
+    }
+
+    .mybroom a p {
+        padding: 1rem 0 1rem 1rem;
+        font-size: 2rem;
+    }
+
+    /*==========pop up============*/
+    .burger_pack {
+        transform: translateY(30%);
+    }
+
+    .menu li img {
+        width: 9.6rem;
+    }
+
+    .menu li:first-child {
+        margin: 0 0 8rem 0;
+    }
+
+    .menu li {
+        margin: 2rem auto;
+    }
+
+    .menu li a {
+        font-size: 4rem;
+    }
+
+    .sns {
+        transform: translate(45%, 100%);
+    }
+
+    .sns a {
+        margin: 0.8rem 0.24rem;
+    }
+
+    .sns a img {
+        width: 3.2rem;
+    }
+
+
+    .pop_menu p {
+        font-size: 1.2rem;
+        margin-top: 10rem;
+    }
+
+    /*나의 부름*/
+    .mylist h4 {
+        font-size: 2.4rem;
+        margin: 2.4rem 0 1.6rem 0;
+    }
+
+    .info input {
+        margin: 0.4rem auto;
+        padding: 0.8rem 2.4rem;
+        font-size: 2rem;
+    }
+
+    .submit input {
+        margin: 0.8rem auto;
+        padding: 4rem auto;
+        font-size: 1.8rem;
+    }
+}
