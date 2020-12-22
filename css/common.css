@@ -201,7 +201,7 @@ header nav.active .burger span {
     position: fixed;
     z-index: 201;
     display: none;
-    background-color: rgba(0, 89, 233, 1);
+    background-color: rgba(0, 89, 233, 0.9);
 }
 .pop_pack.active {
     display: block;
@@ -216,10 +216,12 @@ header nav.active .burger span {
 
 .menu li:nth-of-type(1) {
     margin: 3% 0;
+    cursor: pointer;
 }
 
 .menu li {
     margin-bottom: 1%;
+    
 }
 
 .menu li.active a {
@@ -227,6 +229,7 @@ header nav.active .burger span {
 }
 
 .menu li a {
+    cursor: pointer;
     color: #fff;
     font-family: 'yg-jalnan';
     font-size: 50px;
@@ -335,5 +338,4 @@ header nav.active .burger span {
     .sns p {
         font-size: 1.2rem;
     }
-
 }
