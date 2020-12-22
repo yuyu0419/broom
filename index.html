@@ -15,23 +15,30 @@
     <link href="css/last.css" rel="stylesheet" type="text/css">
     <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css">
     <link href="css/plugin.css" rel="stylesheet" type="text/css">
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/skrollr.min.js"></script>
+    <!-- <script src="js/common.js"></script> -->
+    <script src="js/bulid.js"></script>
+
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="burger">
+            <div data-num="0" class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
+            </div>
+            <div data-num="1" class="mybroom">
+                <a>
+                    <p>나의 부름</p>
+                </a>
             </div>
         </nav>
     </header>
     <div class="pop_pack">
         <article class="pop_menu" id="menu">
+            <div class="burger_pack">
                 <ul class="menu">
                     <li data-num="0"><img src="img/logo_white.png" alt=""></li>
                     <li data-num="1"><a>믿고싸게부름</a></li>
@@ -49,6 +56,24 @@
                     인허가번호 : 제2020-3780288-14-5-00003호
 
                     Copyright 2020 Broom Partners Co. all rights reserved.</p>
+            </div>
+        </article>
+        <article class="mybroom_pop" id="mybroom">
+            <div class="mylist">
+
+                <h4>나의 부름</h4>
+
+                <div class="login">
+                    <div class="info">
+                        <input type="tel" placeholder="전화번호를 입력하세요.">
+                        <input type="password" placeholder="비밀번호를 입력하세요.">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="LOGIN">
+                    </div>
+                </div>
+            </div>
+
         </article>
     </div>
 
